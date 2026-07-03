@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "5.0.0",
-    "generated_at": "2026-06-26T08:54:05.851Z",
+    "generated_at": "2026-07-03T08:53:29.934Z",
     "total_bandi": 172,
     "sources": [
       "aggregatore",
@@ -1769,7 +1769,7 @@
       "url_domanda": "https://www.regione.piemonte.it/web/temi/fondi-progetti-europei",
       "data_apertura": "2026-01-01",
       "data_scadenza": "2026-06-30",
-      "stato": "aperto",
+      "stato": "chiuso",
       "dotazione": 500000,
       "contributo_min": 2000,
       "contributo_max": 5000,
@@ -3575,7 +3575,7 @@
       "url_domanda": "https://www.regione.puglia.it/web/feampa-21-27/-/pn-feampa-2021-2027-avviso-pubblico-per-gli-investimenti-nel-settore-dell-acquacoltura-sostenibile-azioni-3-4-5-e-6-interventi-221303-221402-221502-e-221609-",
       "data_apertura": "2026-03-30",
       "data_scadenza": "2026-06-27",
-      "stato": "aperto",
+      "stato": "chiuso",
       "dotazione": null,
       "contributo_min": null,
       "contributo_max": null,
@@ -6112,7 +6112,7 @@
       "url_domanda": "https://www.va.camcom.it",
       "data_apertura": null,
       "data_scadenza": "2026-06-30",
-      "stato": "aperto",
+      "stato": "chiuso",
       "dotazione": null,
       "contributo_min": null,
       "contributo_max": null,
