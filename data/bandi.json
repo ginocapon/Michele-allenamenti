@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "5.0.0",
-    "generated_at": "2026-07-03T08:53:29.934Z",
+    "generated_at": "2026-07-10T09:23:01.899Z",
     "total_bandi": 172,
     "sources": [
       "aggregatore",
@@ -1486,7 +1486,7 @@
       "url_domanda": "https://www.mase.gov.it/portale/web/guest/-/energia-mase-avviso-pubblico-da-262-milioni-per-nuovi-impianti-fotovoltaici-e-termo-fotovoltaici-nel-mezzogiorno-",
       "data_apertura": "2025-11-01",
       "data_scadenza": "2026-07-03",
-      "stato": "aperto",
+      "stato": "chiuso",
       "dotazione": 262000000,
       "contributo_min": 30000,
       "contributo_max": 1000000,
