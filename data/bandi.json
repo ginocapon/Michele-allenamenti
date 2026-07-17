@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "5.0.0",
-    "generated_at": "2026-07-10T09:23:01.899Z",
+    "generated_at": "2026-07-17T07:57:47.209Z",
     "total_bandi": 172,
     "sources": [
       "aggregatore",
@@ -4954,7 +4954,7 @@
       "url_domanda": "https://www.ptpo.camcom.it",
       "data_apertura": null,
       "data_scadenza": "2026-07-15",
-      "stato": "aperto",
+      "stato": "chiuso",
       "dotazione": null,
       "contributo_min": null,
       "contributo_max": null,
