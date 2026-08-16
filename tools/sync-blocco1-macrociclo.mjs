@@ -33,7 +33,7 @@ function toMacroEx(ex) {
 }
 
 const sessioni = {};
-for (const key of ["a1", "b1", "a2", "b2"]) {
+for (const key of ["ab", "ac", "cb"]) {
   const s = blocco.sessioni[key];
   sessioni[key] = {
     nome: s.codice + " · " + s.nome,

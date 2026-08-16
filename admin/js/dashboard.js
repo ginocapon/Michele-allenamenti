@@ -1,17 +1,11 @@
 /**
- * Ciclo annuale — 4 fasi × A1 B1 A2 B2 (apri + scarica PDF)
+ * Ciclo annuale — 4 fasi × AB AC CB (3 sedute, parte alta ~55%)
  */
 (function () {
   "use strict";
 
   var DATA_URL = (window.fqUrl ? window.fqUrl("/admin/data/macrociclo-2026-2027.json") : "/admin/data/macrociclo-2026-2027.json");
-
-  var FASE_SHORT = {
-    "ipertrofia-accumulo": "Accumulo 8–12 rep · deload sett. 13",
-    "tensione-forza": "Tensione 6–8 poi forza 4–6 · deload sett. 13",
-    "ipertrofia-classica-ii": "Secondo accumulo · deload sett. 13",
-    "ricondizionamento": "Mantenimento 10–12 · deload sett. 13"
-  };
+  var SESSIONI = ["ab", "ac", "cb"];
 
   function el(tag, attrs, children) {
     var node = document.createElement(tag);
@@ -40,7 +34,59 @@
   }
 
   function shortName(sessione) {
-    return (sessione.nome || "").replace(/^A1\s*·\s*|^B1\s*·\s*|^A2\s*·\s*|^B2\s*·\s*/i, "");
+    return (sessione.nome || "").replace(/^(AB|AC|CB)\s*·\s*/i, "");
+  }
+
+  function renderPrincipi(data, root) {
+    var box = el("aside", { className: "ciclo-principi panel-raised" });
+    box.appendChild(el("h3", { text: "Come è costruita la settimana" }));
+    var p = data.macrociclo.profilo || {};
+    var ul = el("ul", { className: "ciclo-principi__list" });
+    [
+      "3 allenamenti: AB · AC · CB (non 4). Tipo Lun AB · Mer AC · Ven CB.",
+      "AB – AC / C–B: AB e AC condividono la spinta (A). CB mette tirata (C) e gambe (B) lontano da AB, così le gambe recuperano.",
+      "Priorità parte alta ~55% delle serie (petto, schiena, spalle, braccia). Il resto è gambe e polpacci.",
+      "Obiettivo 60 minuti, tetto 75. Si sta nel tempo accoppiando l’isolamento nel recupero dei fondamentali (*), non tagliando il riposo.",
+      "Ogni fase dura 13 settimane. La 13 è deload (−40% volume). Stessi esercizi per tutta la fase.",
+      "Le liste esercizi si chiudono con Michele. Questi principi no."
+    ].forEach(function (t) {
+      ul.appendChild(el("li", { text: t }));
+    });
+    box.appendChild(ul);
+    if (p.durataSeduta) {
+      box.appendChild(el("p", {
+        className: "ciclo-principi__meta",
+        text: (p.split || "AB – AC / C–B") + " · " + p.durataSeduta + " · " + (p.prioritaVolume || "parte alta ~55%")
+      }));
+    }
+    root.appendChild(box);
+  }
+
+  function renderIr(fase) {
+    var ir = fase.intensitaRecupero || {};
+    var wrap = el("div", { className: "admin-fase__ir" });
+    if (fase.perche) {
+      wrap.appendChild(el("p", {
+        className: "admin-fase__perche",
+        html: "<strong>A cosa serve.</strong> " + fase.perche
+      }));
+    }
+    if (ir.intensita) {
+      wrap.appendChild(el("p", {
+        html: "<strong>Intensità.</strong> " + ir.intensita
+      }));
+    }
+    if (ir.recupero) {
+      wrap.appendChild(el("p", {
+        html: "<strong>Recupero.</strong> " + ir.recupero
+      }));
+    }
+    wrap.appendChild(el("p", {
+      className: "admin-fase__durata",
+      text: (ir.durataSeduta || "obiettivo 60 min, tetto 75 min") +
+        " · " + (ir.deload || "settimana 13 · −40% volume")
+    }));
+    return wrap;
   }
 
   function renderDashboard(data, root) {
@@ -48,8 +94,11 @@
     root.appendChild(el("h2", { id: "ciclo-title", text: "Ciclo dell’anno" }));
     root.appendChild(el("p", {
       className: "ciclo-lead",
-      text: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) + " · 4 fasi · 4 schede a settimana"
+      text: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) +
+        " · 4 fasi × 13 settimane · 3 schede a settimana (AB · AC · CB) · parte alta ~55%"
     }));
+
+    renderPrincipi(data, root);
 
     var timeline = el("div", { className: "admin-timeline" });
     data.fasi.forEach(function (fase, i) {
@@ -58,18 +107,22 @@
       head.innerHTML =
         "<div><span class=\"admin-fase__num\">Fase " + (i + 1) + "</span>" +
         "<h3>" + fase.nome.replace(/^Fase \d+ · /, "") + "</h3>" +
-        "<p class=\"admin-fase__dates\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) + " · " + fase.settimane + " settimane</p></div>" +
-        "<p class=\"admin-fase__obiettivo\">" + (FASE_SHORT[fase.id] || "") + "</p>";
+        "<p class=\"admin-fase__dates\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
+        " · " + fase.settimane + " settimane</p></div>";
       block.appendChild(head);
+      block.appendChild(renderIr(fase));
 
-      var grid = el("div", { className: "admin-sessioni-grid" });
-      ["a1", "b1", "a2", "b2"].forEach(function (key) {
+      var grid = el("div", { className: "admin-sessioni-grid admin-sessioni-grid--3" });
+      SESSIONI.forEach(function (key) {
         var s = fase.sessioni[key];
         if (!s) return;
         var wrap = el("article", { className: "scheda-mini" });
         wrap.appendChild(el("span", { className: "scheda-mini__key", text: key.toUpperCase() }));
         wrap.appendChild(el("strong", { text: shortName(s) }));
-        wrap.appendChild(el("p", { text: s.esercizi.length + " esercizi" }));
+        var meta = s.esercizi.length + " esercizi";
+        if (s.accoppiamento) meta += " · " + s.accoppiamento;
+        wrap.appendChild(el("p", { text: meta }));
+        if (s.notaSeduta) wrap.appendChild(el("p", { className: "scheda-mini__nota", text: s.notaSeduta }));
         var actions = el("div", { className: "scheda-mini__actions" });
         actions.appendChild(el("a", {
           className: "btn btn-ghost",

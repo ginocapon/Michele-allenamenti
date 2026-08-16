@@ -61,8 +61,17 @@
     root.appendChild(nav);
 
     var head = el("header", { className: "admin-session-head" });
-    head.innerHTML = "<p class=\"tagline\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) + "</p><h1>" + sessionKey.toUpperCase() + " — " + s.nome + "</h1><p class=\"lead\">" + fase.obiettivo + "</p>";
+    var ir = fase.intensitaRecupero || {};
+    var lead = (fase.perche ? fase.perche + " " : "") + (s.notaSeduta || fase.obiettivo || "");
+    head.innerHTML = "<p class=\"tagline\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
+      " · obiettivo 60 min · tetto 75</p><h1>" + sessionKey.toUpperCase() + " — " + s.nome + "</h1><p class=\"lead\">" + lead + "</p>";
     root.appendChild(head);
+    if (ir.intensita || ir.recupero) {
+      var irBox = el("aside", { className: "admin-fase__ir" });
+      if (ir.intensita) irBox.appendChild(el("p", { html: "<strong>Intensità.</strong> " + ir.intensita }));
+      if (ir.recupero) irBox.appendChild(el("p", { html: "<strong>Recupero.</strong> " + ir.recupero }));
+      root.appendChild(irBox);
+    }
 
     var actions = el("div", { className: "admin-session-actions no-print" });
     actions.innerHTML =
@@ -85,7 +94,7 @@
     root.appendChild(tableWrap);
 
     var links = el("nav", { className: "admin-session-nav" });
-    ["a1", "b1", "a2", "b2"].forEach(function (k) {
+    ["ab", "ac", "cb"].forEach(function (k) {
       if (!fase.sessioni[k]) return;
       links.appendChild(el("a", {
         href: sessionHref(faseId, k),
@@ -101,7 +110,7 @@
     if (!root) return;
     var params = new URLSearchParams(window.location.search);
     var faseId = params.get("ciclo");
-    var sessionKey = (params.get("sessione") || "a1").toLowerCase();
+    var sessionKey = (params.get("sessione") || "ab").toLowerCase();
     if (!faseId) {
       root.innerHTML = "<p>Parametro <code>ciclo</code> mancante. <a href=\"/admin/\">Dashboard</a>.</p>";
       return;

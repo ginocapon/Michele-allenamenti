@@ -1,5 +1,5 @@
 /**
- * PDF una fase (A1–B2) da macrociclo — anonimo, kg blank
+ * PDF una fase (AB–CB) da macrociclo — anonimo, kg blank
  */
 (function () {
   "use strict";
@@ -58,6 +58,15 @@
       introHtml += "</p>";
     }
     if (fase.schedaIntro) introHtml += "<p class=\"scheda-a4__intro-text\">" + fase.schedaIntro + "</p>";
+    if (fase.perche) {
+      introHtml += "<p class=\"scheda-a4__intro-text\"><strong>A cosa serve.</strong> " + fase.perche + "</p>";
+    }
+    if (fase.intensitaRecupero) {
+      var ir = fase.intensitaRecupero;
+      introHtml += "<p class=\"scheda-a4__intro-text\"><strong>Intensità.</strong> " + (ir.intensita || "") + "</p>";
+      introHtml += "<p class=\"scheda-a4__intro-text\"><strong>Recupero.</strong> " + (ir.recupero || "") +
+        " · " + (ir.durataSeduta || "60 min / tetto 75") + "</p>";
+    }
     intro.innerHTML = introHtml;
     article.appendChild(intro);
 
@@ -89,7 +98,7 @@
     }
 
     var grid = el("div", { className: "scheda-a4__grid" });
-    ["a1", "b1", "a2", "b2"].forEach(function (key) {
+    ["ab", "ac", "cb"].forEach(function (key) {
       var day = fase.sessioni[key];
       if (!day) return;
       var quad = el("section", { className: "scheda-a4__quad" });

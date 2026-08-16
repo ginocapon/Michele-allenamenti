@@ -453,6 +453,25 @@
 .admin-fase h3 { margin: 0.15rem 0; font-size: 1.15rem; }
 .admin-fase__dates { margin: 0; font-size: 0.85rem; color: var(--muted); }
 .admin-fase__obiettivo { margin: 0; font-size: 0.9rem; color: #ccc4b8; max-width: 28rem; }
+.admin-fase__ir {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  background: var(--surface-2);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+.admin-fase__ir p { margin: 0; font-size: 0.88rem; color: #ccc4b8; line-height: 1.45; }
+.admin-fase__perche { color: var(--text) !important; }
+.admin-fase__durata { font-size: 0.8rem !important; color: var(--muted) !important; }
+
+.ciclo-principi { padding: 1.15rem 1.25rem; margin: 0 0 1.5rem; }
+.ciclo-principi h3 { margin: 0 0 0.6rem; font-size: 1.05rem; }
+.ciclo-principi__list { margin: 0; padding-left: 1.15rem; }
+.ciclo-principi__list li { margin: 0 0 0.4rem; font-size: 0.9rem; color: #ccc4b8; }
+.ciclo-principi__meta { margin: 0.75rem 0 0; font-size: 0.8rem; color: var(--muted); }
+.scheda-mini__nota { font-size: 0.78rem !important; line-height: 1.35; }
 
 .admin-sessioni-grid {
   display: grid;
@@ -463,6 +482,7 @@
 }
 @media (min-width: 960px) {
   .admin-sessioni-grid { grid-template-columns: repeat(4, 1fr); }
+  .admin-sessioni-grid--3 { grid-template-columns: repeat(3, 1fr); }
 }
 
 .admin-sessione-card-wrap {

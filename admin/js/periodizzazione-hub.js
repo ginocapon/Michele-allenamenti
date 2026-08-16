@@ -77,7 +77,7 @@
       }));
 
       var days = el("ul", { className: "perio-fase-card__days" });
-      ["a1", "b1", "a2", "b2"].forEach(function (key) {
+      ["ab", "ac", "cb"].forEach(function (key) {
         var s = fase.sessioni[key];
         if (!s) return;
         var li = el("li");
@@ -105,8 +105,8 @@
       }));
       actions.appendChild(el("a", {
         className: "btn btn-ghost",
-        href: (window.fqUrl ? window.fqUrl("/admin/sessione/") : "/admin/sessione/") + "?ciclo=" + encodeURIComponent(fase.id) + "&sessione=a1",
-        text: "Apri A1 online"
+        href: (window.fqUrl ? window.fqUrl("/admin/sessione/") : "/admin/sessione/") + "?ciclo=" + encodeURIComponent(fase.id) + "&sessione=ab",
+        text: "Apri AB online"
       }));
       card.appendChild(actions);
 

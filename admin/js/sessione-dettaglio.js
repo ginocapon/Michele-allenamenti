@@ -193,12 +193,22 @@
       "<h1>" + s.codice + " – " + blocco.codice + "</h1>" +
       "<p class=\"lead\">" + s.nome + " · " + blocco.durataSeduta + " · " + blocco.frequenza + "</p>";
     root.appendChild(head);
+    if (blocco.intensitaRecupero || s.notaSeduta) {
+      var irBox = el("aside", { className: "admin-fase__ir" });
+      if (blocco.perche) irBox.appendChild(el("p", { html: "<strong>A cosa serve.</strong> " + blocco.perche }));
+      if (blocco.intensitaRecupero) {
+        irBox.appendChild(el("p", { html: "<strong>Intensità.</strong> " + blocco.intensitaRecupero.intensita }));
+        irBox.appendChild(el("p", { html: "<strong>Recupero.</strong> " + blocco.intensitaRecupero.recupero }));
+      }
+      if (s.notaSeduta) irBox.appendChild(el("p", { text: s.notaSeduta }));
+      root.appendChild(irBox);
+    }
 
     var actions = el("div", { className: "admin-session-actions no-print" });
     actions.innerHTML =
       "<a class=\"btn btn-primary\" href=\"/admin/metodo-blocco1/pdf/\">PDF metodo blocco</a>" +
       "<a class=\"btn btn-primary\" href=\"/admin/sessione/pdf/?ciclo=" + encodeURIComponent(blocco.id) + "&sessione=" + sessionKey + querySuffix() + "\" target=\"_blank\">Stampa scheda con spiegazioni</a>" +
-      "<a class=\"btn btn-ghost\" href=\"/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(blocco.id) + "\" target=\"_blank\">PDF fase completa A1–B2</a>" +
+      "<a class=\"btn btn-ghost\" href=\"/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(blocco.id) + "\" target=\"_blank\">PDF fase completa AB–CB</a>" +
       "<a class=\"btn btn-ghost\" href=\"/admin/mappa-esercizi/\">Mappa esercizi</a>";
     root.appendChild(actions);
 
@@ -289,7 +299,7 @@
     root.appendChild(shared);
 
     var links = el("nav", { className: "admin-session-nav" });
-    ["a1", "b1", "a2", "b2"].forEach(function (k) {
+    ["ab", "ac", "cb"].forEach(function (k) {
       links.appendChild(el("a", {
         href: sessionHref(blocco.id, k),
         className: k === sessionKey ? "is-active" : "",

@@ -69,7 +69,7 @@
 
   function adaptBloccoToFase(blocco) {
     var sessioni = {};
-    ["a1", "b1", "a2", "b2"].forEach(function (key) {
+    ["ab", "ac", "cb"].forEach(function (key) {
       var s = blocco.sessioni[key];
       if (!s) return;
       sessioni[key] = {
@@ -94,8 +94,10 @@
       inizio: blocco.inizio,
       fine: blocco.fine,
       settimane: blocco.settimane,
-      rir: "sett. 6–8: RIR 1 · vedi /admin/metodo-blocco1/pdf/",
+      rir: blocco.rir || "sett. 6–8: RIR 1",
       obiettivo: blocco.schedaIntro,
+      perche: blocco.perche,
+      intensitaRecupero: blocco.intensitaRecupero,
       sessioni: sessioni
     };
   }
@@ -124,7 +126,17 @@
       "<span><strong>RIR:</strong> " + fase.rir + "</span>" +
       "<span><strong>Atleta:</strong> _______________</span>" +
       "</div>" +
-      "<p class=\"scheda-sessione-pdf__obiettivo\">" + fase.obiettivo + "</p>";
+      "<p class=\"scheda-sessione-pdf__obiettivo\">" + (fase.perche || fase.obiettivo || "") + "</p>";
+    if (fase.intensitaRecupero) {
+      var ir = fase.intensitaRecupero;
+      head.innerHTML +=
+        "<p class=\"scheda-sessione-pdf__obiettivo\"><strong>Intensità.</strong> " + (ir.intensita || "") + "</p>" +
+        "<p class=\"scheda-sessione-pdf__obiettivo\"><strong>Recupero.</strong> " + (ir.recupero || "") +
+        " · " + (ir.durataSeduta || "60 min / tetto 75") + "</p>";
+    }
+    if (s.notaSeduta) {
+      head.innerHTML += "<p class=\"scheda-sessione-pdf__obiettivo\">" + s.notaSeduta + "</p>";
+    }
     article.appendChild(head);
 
     var oss = el("div", { className: "scheda-sessione-pdf__osservazioni" });
@@ -201,7 +213,7 @@
 
     var params = new URLSearchParams(window.location.search);
     var faseId = params.get("ciclo");
-    var sessionKey = (params.get("sessione") || "a1").toLowerCase();
+    var sessionKey = (params.get("sessione") || "ab").toLowerCase();
 
     var printBtn = document.getElementById("pdf-print-btn");
     if (printBtn) {

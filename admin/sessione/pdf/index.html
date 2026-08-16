@@ -29,13 +29,13 @@
   var p = new URLSearchParams(location.search);
   var back = document.getElementById("pdf-back-link");
   if (back && p.get("ciclo")) {
-    var href = "/admin/sessione/?ciclo=" + encodeURIComponent(p.get("ciclo")) + "&sessione=" + (p.get("sessione") || "a1");
+    var href = "/admin/sessione/?ciclo=" + encodeURIComponent(p.get("ciclo")) + "&sessione=" + (p.get("sessione") || "ab");
     back.href = window.fqUrl ? window.fqUrl(href) : href;
     back.textContent = "Scheda online";
   }
 })();
 </script>
 <script src="/admin/js/sprite-esercizi.js?v=2" defer></script>
-<script src="/admin/js/sessione-pdf.js?v=5" defer></script>
+<script src="/admin/js/sessione-pdf.js?v=6" defer></script>
 </body>
 </html>

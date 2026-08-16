@@ -15,8 +15,8 @@
   function uniqueExercises(blocco) {
     var seen = {};
     var list = [];
-    ["a1", "b1", "a2", "b2"].forEach(function (key) {
-      (blocco.sessioni[key].esercizi || []).forEach(function (ex) {
+    ["ab", "ac", "cb"].forEach(function (key) {
+      (blocco.sessioni[key] && blocco.sessioni[key].esercizi || []).forEach(function (ex) {
         if (!seen[ex.nome]) {
           seen[ex.nome] = true;
           list.push({ nome: ex.nome, figura: ex.figura, sessione: key.toUpperCase() });
@@ -71,7 +71,7 @@
     root.appendChild(grid);
     var back = document.createElement("p");
     back.className = "admin-back";
-    back.innerHTML = "<a href=\"/admin/sessione/?ciclo=ipertrofia-accumulo&sessione=a1\">← A1 Blocco 1</a> · <a href=\"/admin/prototipi/periodizzazione/\">Hub periodizzazione</a>";
+    back.innerHTML = "<a href=\"/admin/sessione/?ciclo=ipertrofia-accumulo&sessione=ab\">← AB Blocco 1</a> · <a href=\"/admin/\">Ciclo</a>";
     root.appendChild(back);
   }
 

@@ -59,7 +59,7 @@
     "figura": "fig-catchball",
     "primario": "Spalle, core",
     "secondario": "Grip, sistema nervoso",
-    "setup": "Kettlebell, finisher in chiusura sessione A1 (se presente).",
+    "setup": "Kettlebell, finisher in chiusura chiusura seduta se presente.",
     "movimento": "Movimento balistico unilaterale 15 rep/braccio, rec <1 min. Carico da definire.",
     "errori": "Metterlo all'inizio; carico eccessivo."
   },
@@ -92,7 +92,7 @@
     "primario": "Adduttori",
     "secondario": "Abduttori",
     "setup": "Macchina adduttori (o adductor machine): schiena appoggiata, ROM controllato.",
-    "movimento": "Contrazione forte, squeeze 3 sec al picco, stop prima del cedimento.",
+    "movimento": "4×8, squeeze 3s, stop prima del cedimento.",
     "errori": "Cedimento eccessivo; ROM incompleto."
   },
   "Doktor (affondo bulgaro guidato)": {
@@ -123,7 +123,7 @@
     "figura": "fig-halo",
     "primario": "Deltoidi, cuffia",
     "secondario": "Core, trapezi",
-    "setup": "Kettlebell, finisher A2 — sempre ultimo esercizio.",
+    "setup": "Kettlebell, finisher AC — sempre ultimo esercizio.",
     "movimento": "Clean al petto, halo lento 10 rep/senso, core attivo. Carico da definire.",
     "errori": "Movimento troppo veloce; carico eccessivo."
   },
@@ -319,14 +319,6 @@
     "movimento": "10-12 rep; ultima serie RIR 0-1 se la tecnica regge.",
     "errori": "Slancio in concentrica."
   },
-  "Adduttori · macchina Doktor PRIMO": {
-    "figura": "fig-doktor",
-    "primario": "Adduttori",
-    "secondario": "Abduttori",
-    "setup": "Macchina adduttori (o adductor machine): schiena appoggiata, ROM controllato.",
-    "movimento": "4×8, squeeze 3s, stop prima del cedimento.",
-    "errori": "Cedimento eccessivo; ROM incompleto."
-  },
   "Doktor": {
     "figura": "fig-doktor",
     "primario": "Adduttori",
@@ -459,7 +451,7 @@
     "figura": "fig-halo",
     "primario": "Deltoidi, cuffia",
     "secondario": "Core, trapezi",
-    "setup": "Kettlebell, finisher A2 — sempre ultimo esercizio.",
+    "setup": "Kettlebell, finisher AC — sempre ultimo esercizio.",
     "movimento": "Halo lento intorno alla testa, 2×12, core attivo.",
     "errori": "Movimento troppo veloce; carico eccessivo."
   },

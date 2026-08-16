@@ -166,8 +166,9 @@
       content.appendChild(el("h2", { text: ciclo.nome }));
       content.appendChild(el("p", { className: "ciclo-card__meta", text: ciclo.obiettivo }));
 
-      ["A1", "B1", "A2", "B2"].forEach(function (dayKey) {
+      Object.keys(ciclo.allenamenti || {}).forEach(function (dayKey) {
         var day = ciclo.allenamenti[dayKey];
+        if (!day) return;
         var section = el("section", { className: "day-block" });
         var head = el("div", { className: "day-block__head" });
         head.appendChild(el("h2", { text: dayKey }));
@@ -227,8 +228,9 @@
       article.appendChild(oss);
 
       var grid = el("div", { className: "scheda-a4__grid" });
-      ["A1", "B1", "A2", "B2"].forEach(function (dayKey) {
+      Object.keys(ciclo.allenamenti || {}).forEach(function (dayKey) {
         var day = ciclo.allenamenti[dayKey];
+        if (!day) return;
         var quad = el("section", { className: "scheda-a4__quad" });
         quad.appendChild(el("h2", { text: dayKey + " · " + day.nome }));
         var table = el("table");
