@@ -7,8 +7,7 @@
     ai.className = "ai-site-notice";
     ai.setAttribute("role", "note");
     ai.innerHTML =
-      'Le figure degli esercizi in admin sono <strong>SVG tecnici originali</strong> (sprite). ' +
-      'Se in futuro si aggiungono immagini generate o abbellite con IA, avranno marchio «Foto AI» e <code>data-ai</code>. ' +
+      'Il ritratto in home è <strong>generato con IA</strong> (marchio «Foto AI»). Le figure degli esercizi sono SVG tecnici. ' +
       'Dettagli: <a href="' + (window.fqUrl ? window.fqUrl("/trasparenza-ai/") : "/trasparenza-ai/") + '">Trasparenza AI (AI Act UE)</a>.';
     footer.appendChild(ai);
   }

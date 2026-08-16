@@ -1,7 +1,7 @@
 {
   "name": "michele-allenamenti",
   "private": true,
-  "description": "Prototipo admin — macrociclo amico (clone periodizzazione Forza Quotidiana)",
+  "description": "Macrociclo Michele Baldan — schede A1–B2",
   "type": "module",
   "scripts": {
     "macro:allinea": "node tools/allinea-amico.mjs",

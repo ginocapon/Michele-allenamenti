@@ -1,15 +1,15 @@
 {
   "macrociclo": {
-    "nome": "Macrociclo annuale amico · Upper/Lower A1–B2",
+    "nome": "Macrociclo 2026–2027 · Michele Baldan",
     "inizio": "2026-09-01",
     "fine": "2027-08-31",
-    "descrizione": "Clone del modello Gino (4 fasi × ~13 settimane, split A1–B1–A2–B2). STEP A: stessa architettura, pesi da compilare a penna dopo i massimali. STEP B: si personalizzano solo esercizi/date/focus senza cambiare MACROCICLO → MESOCICLO → MICROCICLO. Deload = sett. 13 di ogni fase (−40% volume). Finisher kettlebell solo in chiusura A2.",
+    "descrizione": "Ciclo annuale di Michele Baldan: 4 fasi × 13 settimane, split A1–B1–A2–B2. Deload = settimana 13 di ogni fase. Pesi da compilare a penna dopo i massimali.",
     "frequenza": "4 sessioni/settimana",
     "lineeGuida": "4 fasi × ~13 sett. · ~55% serie lower · Deload sett. 13 · Stessi esercizi per tutta la fase · Pesi blank · PDF anonimo",
     "profilo": {
-      "nomeStampa": "",
-      "notaNome": "Il nome atleta va SOLO nel campo compilabile del PDF (Atleta: _______). Il PDF resta anonimo.",
-      "eta": null,
+      "nomeStampa": "Michele Baldan",
+      "notaNome": "Nome in pagina ciclo. PDF stampa: campo Atleta vuoto.",
+      "eta": 50,
       "anniPalestra": null,
       "livello": null,
       "obiettivoAnno": null,
@@ -20,7 +20,7 @@
       "preferenzaMeseCambioFase": "fine novembre / fine febbraio / fine maggio / fine agosto (13 sett.)",
       "prioritaMuscolari": null,
       "kettlebellFinisher": "sì in A2 (Halo / Clean Halo), sempre ultimo esercizio; A1 senza Catch Ball (rebalance 55%)",
-      "toneImmagini": "SVG tecnico (admin/img/esercizi-sprite.svg) — nessuna illustrazione IA in STEP A"
+      "toneImmagini": "Ritratto IA in admin/img/michele/michele-baldan.webp (data-ai). Figure schede: SVG tecnico."
     }
   },
   "fasi": [
