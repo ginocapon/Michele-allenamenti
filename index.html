@@ -1,11 +1,67 @@
 ﻿<!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Allenamenti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hub personale di allenamenti di Michele: profilo, ciclo attivo e schede stampabili.">
+  <meta name="theme-color" content="#100e0c">
+  <title>Michele — hub allenamenti</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,650;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stile.css">
 </head>
 <body>
-<h1>In costruzione</h1>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <strong>Hub allenamenti</strong>
+        <span>Michele</span>
+      </a>
+      <nav class="nav" aria-label="Principale">
+        <a href="./" aria-current="page">Home</a>
+        <a href="allenamenti/">Programma</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenuto">
+    <div class="wrap">
+      <p id="status" class="status" role="status">Caricamento profilo…</p>
+      <section class="hero">
+        <div>
+          <p class="kicker">Profilo atleta</p>
+          <h1 id="nome">Michele</h1>
+          <p class="lead" id="lead">Hub personale: ciclo in corso e schede da aprire in palestra o stampare in PDF.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="allenamenti/">Apri il programma</a>
+            <a class="btn btn-ghost" href="schede/scheda-1.html">Scheda Push</a>
+          </div>
+        </div>
+        <div class="hero-mark" aria-hidden="true">PPL · 8 sett.</div>
+      </section>
+      <dl class="stats" id="stats"></dl>
+      <div class="grid-2 stack">
+        <section class="panel" id="ciclo-teaser">
+          <p class="kicker">Ciclo attivo</p>
+          <h2>In caricamento</h2>
+        </section>
+        <section class="panel">
+          <p class="kicker">Come usarlo</p>
+          <h2>Tre pagine, tre JSON</h2>
+          <p class="note">Home = chi si allena. Programma = settimana tipo. Schede = esercizi, serie, recupero. Per aggiornare i numeri modifica solo i file in <code>data/</code>.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Sito statico · niente account, niente newsletter</span>
+      <span>Dati in <code>data/</code></span>
+    </div>
+  </footer>
+  <script src="js/core.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
