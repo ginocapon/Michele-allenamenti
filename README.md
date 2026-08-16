@@ -9,9 +9,19 @@ Ciclo annuale: 4 fasi × 13 settimane, **3 schede a settimana (AB · AC · CB)**
 
 Se GitHub Pages ha ancora il custom domain RAAS, toglilo da Settings → Pages.
 
-## Locale
+## Locale (si lavora da questa cartella sul PC)
 
-`python3 -m http.server 8080` → http://127.0.0.1:8080/
+Da PowerShell, nella root del repo:
+
+```bash
+python -m http.server 8080
+```
+
+Poi apri http://127.0.0.1:8080/
+
+- Home / ciclo: `/`
+- Admin e PDF: `/admin/`
+- Hub semplice PPL (Push / Pull / Gambe): `/allenamenti/`
 
 ## Verifica
 
