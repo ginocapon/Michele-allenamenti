@@ -1,0 +1,33 @@
+{
+  "anni": [
+    {
+      "id": "2026-2027",
+      "label": "2026 – 2027",
+      "macrocicloUrl": "/admin/data/macrociclo-2026-2027.json",
+      "periodi": [
+        {
+          "id": "set26-ago27",
+          "label": "Settembre 2026 → Agosto 2027",
+          "descrizione": "Ciclo annuale di Michele Baldan: 4 fasi × 13 settimane, A1–B2, deload in settimana 13."
+        }
+      ]
+    }
+  ],
+  "_nota": "Nome in pagina ciclo; PDF stampa resta anonimo (Atleta: _______). Non inventare dati clinici mancanti.",
+  "profilo": {
+    "nomeStampa": "Michele Baldan",
+    "notaNome": "Il nome in pagina è Michele Baldan. Il PDF resta anonimo: campo Atleta compilabile a penna.",
+    "eta": 50,
+    "anniPalestra": null,
+    "livello": null,
+    "obiettivoAnno": null,
+    "giorniSettimana": 4,
+    "attrezzaturaBase": "modello Gino: multipower, manubri, cavi, leg machines, kettlebell (finisher A2). Da confermare in STEP B.",
+    "limitiInfortuni": null,
+    "dataInizio": "2026-09-01",
+    "preferenzaMeseCambioFase": "fine novembre / fine febbraio / fine maggio / fine agosto (13 sett.)",
+    "prioritaMuscolari": null,
+    "kettlebellFinisher": "sì in A2 (Halo / Clean Halo), sempre ultimo esercizio; A1 senza Catch Ball (rebalance 55%)",
+    "toneImmagini": "Ritratto IA + SVG tecnici schede"
+  }
+}

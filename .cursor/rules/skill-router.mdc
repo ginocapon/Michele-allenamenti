@@ -1,0 +1,49 @@
+---
+description: Router skill — carica solo i file necessari al comando (risparmio token)
+alwaysApply: true
+---
+
+# Skill router — token minimo
+
+**Regola:** non leggere `SKILL.md` intero (~1.300 righe) se il task è coperto da un file modulare o da una sezione indicata in `docs/SKILL-INDEX.md`.
+
+## Sempre (già in contesto o file piccoli)
+
+- `.cursor/rules/ai-trasparenza.mdc` — immagini IA
+- `docs/SKILL-INDEX.md` — mappa sezioni e righe di `SKILL.md`
+
+## Router comandi → file da caricare
+
+| Se il task riguarda… | Leggi SOLO | Non caricare |
+|---------------------|------------|--------------|
+| Sessione, TSB, Zepp, Amazfit, layout pro v3 | `SKILL-PERFORMANCE.md` + `SKILL.md` righe 511–763 (§4) | Resto SKILL, LANDING, Guardian |
+| Nuova scheda trimestre / hub allenamenti | `SKILL.md` righe 98–147, 481–510, 1089–1112 | PERFORMANCE intero se non serve Zepp |
+| Diario / articolo riflessione | `SKILL.md` righe 114–147, 922–978 | §3 cardiaco, admin |
+| Newsletter, iscritti, PDF, GAS, GDPR | `SKILL.md` righe 800–920 (§5a) + `SKILL-VENERDI.md` | §4 sessioni |
+| Venerdì / checklist settimanale | `SKILL-VENERDI.md` | SKILL monolitico |
+| Guardian, premortem, salute sito, cron | `guardian/skill/SKILL.md` + `guardian/reports/guardian-latest.md` | Righetto zip, SKILL intero |
+| **Editoriale goliardia / venerdì mattina** | `SKILL-EDITORIAL.md` + `.cursor/commands/venerdi-editoriale.md` + skin JSON | SKILL monolitico, autopilot API |
+| Hero, landing, palette, Panel Relief | `SKILL-LANDING.md` + `SKILL.md` righe 47–96 (§0.1) | §3–4 performance |
+| SEO, sitemap, meta, validate-page | `SKILL.md` righe 979–1087 + `scripts/validate-page.js` | Admin, trimestre |
+| Admin / periodizzazione / macrociclo | `SKILL.md` righe 1125–1278 (§8) | Diario, landing |
+| Fix CSS generico / bug minore | File toccati + regole §0.1 se UI | SKILL intero |
+| Domanda informativa breve | Risposta diretta; indice se serve un dettaglio | Tutti gli skill |
+
+## Ordine operativo
+
+1. Classifica il comando (tabella sopra).
+2. `Read` solo i file/sezioni elencati (`offset`/`limit` su `SKILL.md`).
+3. Espandi a `SKILL.md` completo **solo** se il task attraversa più zone o manca una regola.
+4. Per controlli automatici: `node guardian/scripts/guardian.mjs run --job <nome>` invece di rileggere tutta la doc Guardian.
+
+## Comandi Guardian (scope minimo)
+
+| Comando | Job |
+|---------|-----|
+| Sito su? | `heartbeat` |
+| Newsletter ok? | `transaction_sentinel` |
+| SEO / contenuti | `site_integrity` o `content_freshness` |
+| Report completo | `daily_premortem` |
+| Venerdì strategia | `weekly_strategy` |
+
+Dettaglio: `guardian/README.md`, `docs/GUARDIAN-INTEGRATION.md`.
