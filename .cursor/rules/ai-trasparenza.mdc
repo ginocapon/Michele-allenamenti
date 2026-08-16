@@ -1,5 +1,5 @@
 ---
-description: Trasparenza AI obbligatoria (AI Act UE) su immagini e contenuti di forzaquotidiana.it
+description: Trasparenza AI obbligatoria (AI Act UE) su immagini e contenuti di Michele Baldan
 alwaysApply: true
 ---
 
@@ -28,4 +28,4 @@ Riferimento: **Regolamento (UE) 2024/1689 (AI Act)** — obblighi di trasparenza
 <span class="fig-credit"><span class="ai-badge" aria-hidden="true">IA</span> Immagine generata o abbellita con intelligenza artificiale · <a href="/trasparenza-ai/">Trasparenza</a></span>
 ```
 
-Dettaglio: `SKILL.md` § PRIORITÀ PERMANENTE — Trasparenza AI · `data/editorial-image-skin.json` → `watermark`.
+Dettaglio: `SKILL.md` — PRIORITÀ PERMANENTE — Trasparenza AI. Ritratto originale di Michele: niente `data-ai`. Figure schede: SVG tecnico, non IA.

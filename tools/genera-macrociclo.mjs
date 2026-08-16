@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
  * Rigenera admin/data/macrociclo-2026-2027.json
- * 4 fasi macro da ~13 settimane ciascuna (modello trimestre Q3) —
- * natural 57 anni: niente micro-fasi da 4–6 settimane.
+ * 4 fasi macro da ~13 settimane — Michele Baldan, 50 anni.
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -47,7 +46,7 @@ function mergeTensioneForza() {
   if (!base) throw new Error("Manca blocco tensione/forza nel JSON");
   const sessioni = JSON.parse(JSON.stringify(base.sessioni));
   const forzaSrc = OLD.fasi.find((x) => x.id === "forza");
-  for (const key of ["a1", "b1", "a2", "b2"]) {
+  for (const key of ["ab", "ac", "cb"]) {
     sessioni[key].esercizi.forEach((ex, i) => {
       const fEx = forzaSrc?.sessioni?.[key]?.esercizi?.[i];
       if (ex.progressione) {
@@ -107,7 +106,7 @@ const FASI = [
     settimane: W,
     rir: "2-3 → 1-2",
     obiettivo:
-      "13 settimane sullo stesso schema A1–B2 (modello trimestre Q3). Sett. 1–2 avvio soft RIR 2–3 (ex adattamento anatomico). Sett. 3–12 accumulo 8–12 rep. Sett. 13 deload (−40% volume). Un solo cambio schema a fine fase.",
+      "13 settimane sullo stesso schema AB–AC–CB. Sett. 1–2 avvio soft RIR 2–3. Sett. 3–12 accumulo. Sett. 13 deload (−40% volume).",
     sessioni: softStartIpertrofia(getSessioniAny("ipertrofia-accumulo", "ipertrofia-classica")),
   },
   {
@@ -159,13 +158,13 @@ const totalWeeks = FASI.reduce((a, f) => a + f.settimane, 0);
 
 const macrociclo = {
   macrociclo: {
-    nome: "Macrociclo annuale · Upper/Lower A1–B2",
+    nome: "Macrociclo 2026–2027 · Michele Baldan",
     inizio: "2026-09-01",
     fine: "2027-08-31",
-    descrizione: `Periodizzazione annuale ${totalWeeks} settimane su split A1-B1-A2-B2 (4 sessioni/settimana). **4 fasi macro da ~13 settimane**. Focus ~55% volume serie su gambe+polpacci. Deload = ultima settimana di ogni fase. **Pesi da definire** dopo test massimali.`,
-    frequenza: "4 sessioni/settimana",
+    descrizione: `Periodizzazione annuale ${totalWeeks} settimane, 3 sedute/settimana (AB–AC / C–B). **4 fasi da ~13 settimane**. Focus ~55% serie parte alta. Deload = ultima settimana di ogni fase. **Pesi da definire** dopo test massimali.`,
+    frequenza: "3 sessioni/settimana",
     lineeGuida:
-      "4 fasi × ~13 sett. · ~55% serie lower · Deload sett. 13 · Cambio schema ogni ~3 mesi · Pesi blank fino a 1RM/serie",
+      "4 fasi × ~13 sett. · 3 sedute AB–AC–CB · ~55% serie parte alta · 60 min / tetto 75 · Deload sett. 13 · Pesi blank",
   },
   fasi: FASI,
 };

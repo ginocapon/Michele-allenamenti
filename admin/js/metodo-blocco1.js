@@ -147,7 +147,7 @@
     ]));
 
     container.appendChild(section("5. Volume per seduta — mappa rapida", [
-      el("p", { className: "admin-metodo-lead", text: "Ogni riga è una delle quattro sessioni." }),
+      el("p", { className: "admin-metodo-lead", text: "Ogni riga è una delle tre sessioni (AB · AC · CB)." }),
       table(
         ["Scheda", "Dettaglio volumi (serie efficaci)"],
         g.volumePerSeduta.map(function (v) {
@@ -169,7 +169,7 @@
 
     container.appendChild(el("footer", {
       className: "metodo-a4__foot",
-      text: blocco.codice + " · Metodo operativo · Schede A1–B2 in /admin/ · * = fondamentale in progressione"
+      text: blocco.codice + " · Metodo operativo · Schede AB–CB in /admin/ · * = fondamentale in progressione"
     }));
   }
 
@@ -192,7 +192,7 @@
         className: "btn btn-primary btn-sm",
         text: "Apri versione PDF / stampa →"
       }));
-      ["a1", "b1", "a2", "b2"].forEach(function (k) {
+      ["ab", "ac", "cb"].forEach(function (k) {
         nav.appendChild(el("a", {
           href: "/admin/sessione/?ciclo=" + encodeURIComponent(blocco.id) + "&sessione=" + k,
           text: k.toUpperCase()

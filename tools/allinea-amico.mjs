@@ -69,7 +69,7 @@ function blankPeso(ex) {
 }
 
 for (const fase of macro.fasi) {
-  for (const key of ["a1", "b1", "a2", "b2"]) {
+  for (const key of ["ab", "ac", "cb"]) {
     const s = fase.sessioni[key];
     if (!s) continue;
     s.esercizi = s.esercizi.map(blankPeso);
@@ -81,32 +81,21 @@ for (const fase of macro.fasi) {
   }
 }
 
-macro.macrociclo.nome = "Macrociclo annuale amico · Upper/Lower A1–B2";
+macro.macrociclo.nome = "Macrociclo 2026–2027 · Michele Baldan";
 macro.macrociclo.descrizione =
-  "Clone del modello Gino (4 fasi × ~13 settimane, split A1–B1–A2–B2). STEP A: stessa architettura, pesi da compilare a penna dopo i massimali. STEP B: si personalizzano solo esercizi/date/focus senza cambiare MACROCICLO → MESOCICLO → MICROCICLO. Deload = sett. 13 di ogni fase (−40% volume). Finisher kettlebell solo in chiusura A2.";
+  "Ciclo annuale di Michele Baldan: 4 fasi × 13 settimane, 3 sedute/settimana (AB · AC · CB). Priorità parte alta ~55%. Deload = settimana 13. Pesi a penna. PDF anonimo.";
 macro.macrociclo.lineeGuida =
-  "4 fasi × ~13 sett. · ~55% serie lower · Deload sett. 13 · Stessi esercizi per tutta la fase · Pesi blank · PDF anonimo";
-macro.macrociclo.profilo = {
-  nomeStampa: "",
-  notaNome: "Il nome atleta va SOLO nel campo compilabile del PDF (Atleta: _______). Il PDF resta anonimo.",
-  eta: null,
-  anniPalestra: null,
-  livello: null,
-  obiettivoAnno: null,
-  giorniSettimana: 4,
-  attrezzaturaBase:
-    "modello Gino: multipower, manubri, cavi, leg machines, kettlebell (finisher A2). Da confermare in STEP B.",
-  limitiInfortuni: null,
-  dataInizio: macro.macrociclo.inizio,
-  preferenzaMeseCambioFase: "fine novembre / fine febbraio / fine maggio / fine agosto (13 sett.)",
-  prioritaMuscolari: null,
-  kettlebellFinisher: "sì in A2 (Halo / Clean Halo), sempre ultimo esercizio; A1 senza Catch Ball (rebalance 55%)",
-  toneImmagini: "SVG tecnico (admin/img/esercizi-sprite.svg) — nessuna illustrazione IA in STEP A",
-};
+  "4 fasi × ~13 sett. · 3 sedute (AB–AC / C–B) · ~55% serie parte alta · 60 min / tetto 75 · Deload sett. 13 · Pesi blank · PDF anonimo";
+if (macro.macrociclo.profilo) {
+  macro.macrociclo.profilo.giorniSettimana = 3;
+  macro.macrociclo.profilo.prioritaVolume = "parte alta ~55%";
+  macro.macrociclo.profilo.durataSeduta = "obiettivo 60 min, tetto 75 min";
+  macro.macrociclo.profilo.kettlebellFinisher = "sì in AC (Halo), sempre ultimo esercizio";
+}
 
 delete macro.macrociclo.pesoPartenza;
 
-for (const key of ["a1", "b1", "a2", "b2"]) {
+for (const key of ["ab", "ac", "cb"]) {
   const s = blocco.sessioni[key];
   s.esercizi = s.esercizi.map((ex) => {
     const cat = lookupCat(ex.nome);
@@ -124,7 +113,7 @@ for (const key of ["a1", "b1", "a2", "b2"]) {
 }
 
 blocco.schedaIntro =
-  "4 allenamenti/settimana (A1–B1–A2–B2). Schema tipo: Lun A1 · Mar B1 · Gio A2 · Sab B2. Pesi da compilare a penna. Gli esercizi con * progrediscono quando completi il tetto rep col RIR target per 2 sedute di fila. Halo in A2 è sempre l’ultimo esercizio.";
+  "3 allenamenti/settimana: Lun AB · Mer AC · Ven CB. Priorità parte alta ~55%. Obiettivo 60 min, tetto 75. Halo in AC sempre ultimo. Pesi a penna. PDF anonimo.";
 
 hub.anni = [
   {
@@ -136,7 +125,7 @@ hub.anni = [
         id: "set26-ago27",
         label: "Settembre 2026 → Agosto 2027",
         descrizione:
-          "STEP A: clone del macrociclo Gino (4×13 sett., A1–B2, deload sett. 13, ~55% lower). Pesi vuoti. Personalizzazione esercizi/date = STEP B.",
+          "Ciclo annuale Michele Baldan: 4×13 sett., AB·AC·CB, deload sett. 13, parte alta ~55%. Pesi vuoti.",
       },
     ],
   },
@@ -152,7 +141,7 @@ if (meso.periodizzazioneAnnuale) {
 }
 
 const figureRows = [];
-for (const key of ["a1", "b1", "a2", "b2"]) {
+for (const key of ["ab", "ac", "cb"]) {
   const s = blocco.sessioni[key];
   s.esercizi.forEach((ex) => {
     const cat = lookupCat(ex.nome) || {};

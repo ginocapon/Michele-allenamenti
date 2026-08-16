@@ -1,15 +1,16 @@
 {
   "split": {
-    "nome": "Upper/Lower alternato A1-B1-A2-B2",
-    "descrizione": "Split a 4 giorni con enfasi rotante sui gruppi muscolari. Ogni sessione upper alterna la priorità tra petto e schiena; ogni sessione lower alterna il focus tra pattern accosciato (quadricipiti) e pattern di anca (catena posteriore). Gli esercizi contrassegnati con * sono i movimenti principali con progressione a carico fisso secondo lo schema RIR.",
+    "nome": "AB – AC / C–B · 3 giorni · priorità parte alta",
+    "descrizione": "Tre sedute. A = spinta parte alta, B = gambe, C = tirata parte alta. AB e AC condividono A (petto/spalle due volte a settimana). CB mette C e B lontano da AB così le gambe recuperano. Circa 55% delle serie sulla parte alta. Obiettivo 60 min, tetto 75.",
     "giorni": {
-      "A1": "Petto* (priorità) · Schiena · Spalle — sessione upper con enfasi pettorale",
-      "B1": "Gambe focus accosciata* (squat pattern) · Braccia — sessione lower quadricipiti-dominante",
-      "A2": "Schiena* (priorità) · Petto · Spalle* — sessione upper con enfasi dorsale",
-      "B2": "Gambe focus anca* (hinge pattern) · Braccia — sessione lower catena posteriore-dominante"
+      "AB": "A + B — spinta parte alta + gambe brevi",
+      "AC": "A + C — spinta e tirata parte alta (Halo ultimo)",
+      "CB": "C + B — chiusura tirata/braccia + gambe principali"
     },
-    "frequenza": "4 allenamenti a settimana con almeno 1 giorno di riposo tra sessioni lower consecutive",
-    "progressione": "Su ogni giornata, l'esercizio principale (*) segue una progressione a carico fisso: quando si raggiunge il limite superiore del range ripetizioni con il RIR target per 2 sessioni consecutive, si aumenta il carico alla sessione successiva."
+    "frequenza": "3 allenamenti a settimana con almeno 48 ore tra AB e CB",
+    "progressione": "Su ogni giornata, l’esercizio principale (*) segue progressione a carico fisso: tetto rep col RIR target per 2 sedute di fila → +kg.",
+    "prioritaVolume": "parte alta ~55%",
+    "durataSeduta": "obiettivo 60 min, tetto 75 min"
   },
   "periodizzazioneAnnuale": [
     {

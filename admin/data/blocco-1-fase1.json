@@ -6,10 +6,10 @@
   "inizio": "2026-09-01",
   "fine": "2026-11-30",
   "settimane": 13,
-  "frequenza": "4 allenamenti/settimana",
-  "durataSeduta": "85-95 minuti",
+  "frequenza": "3 allenamenti/settimana",
+  "durataSeduta": "obiettivo 60 minuti · tetto 75 minuti",
   "guida": "Fase di costruzione in 13 settimane con intensità ondulata: parti soft (RIR 3–2), accumuli a RIR 2 e poi 1, scarico parziale in sett. 9, picco controllato in sett. 10–12 (cedimento solo sull’ultima serie dei fondamentali), deload obbligatorio in sett. 13 (−40% volume). Non cercare PR nelle prime settimane: cerca serie pulite e progressione sul carico quando completi il tetto di rep col RIR target per due sedute di fila.",
-  "schedaIntro": "4 allenamenti/settimana (A1–B1–A2–B2). Schema tipo: Lun A1 · Mar B1 · Gio A2 · Sab B2. Pesi da compilare a penna. Gli esercizi con * progrediscono quando completi il tetto rep col RIR target per 2 sedute di fila. Halo in A2 è sempre l’ultimo esercizio.",
+  "schedaIntro": "3 allenamenti/settimana: Lun AB · Mer AC · Ven CB (o Mar/Gio/Sab). AB e AC condividono A (spinta). CB chiude C e B, lontano da AB così le gambe recuperano. Priorità parte alta ~55% delle serie. Obiettivo 60 min, tetto 75. Halo sempre ultimo se presente. Pesi a penna. PDF anonimo.",
   "periodizzazione": [
     {
       "fase": "Adattamento",
@@ -84,7 +84,7 @@
     "sett6_8": [
       "RIR 1 su tutte le serie (target della scheda)",
       "Fondamentali (*): progredisci se completi il tetto rep per 2 sedute",
-      "Leg Extension B1: RIR 0-1 solo ultimo set"
+      "Leg Extension CB: RIR 0-1 solo ultimo set"
     ],
     "sett9": [
       "Scarico parziale: −25% serie totali (es. 4→3, 3→2)",
@@ -104,59 +104,49 @@
     ]
   },
   "valutazioneProgramma": {
-    "petto": 7,
-    "schiena": 14,
-    "spalleAnteriori": 12,
-    "spalleLaterali": 6,
-    "deltoidePosteriore": 3,
-    "quadricipiti": 16,
-    "femorali": 16,
-    "glutei": 11,
-    "polpacci": 16,
-    "bicipitiDiretti": 7,
-    "note": "Volume settimanale efficace A1–B2. Spalle anteriori = 6 serie lento diretto + 6 da pressing petto (panca+croci). Femorali e glutei includono overlap da adduttori, squat e trap bar. Polpacci: 4 serie per sessione. Deload sett. 13 non incluso."
+    "note": "Volume settimanale AB+AC+CB. Priorità parte alta ~55% delle serie. Deload sett. 13 non incluso. Le liste esercizi si chiudono con Michele; i principi non cambiano."
   },
   "guidaOperativa": {
-    "titolo": "Metodo Blocco 1 — come usare le 4 schede",
-    "sintesi": "Stesso programma per 13 settimane: cambiano solo RIR, volume (settimana 9 e 13) e kg. Le quattro schede non si mescolano: ogni seduta ha esercizi fissi nell’ordine indicato.",
+    "titolo": "Metodo Blocco 1 — come usare le 3 schede",
+    "sintesi": "Stesso programma per 13 settimane: cambiano solo RIR, volume (settimana 9 e 13) e kg. Tre schede: AB, AC, CB. Non mescolare gli esercizi tra sedute.",
     "distribuzioneSettimanale": {
-      "schema": "Upper / Lower alternato · 4 giorni + 3 riposi",
+      "schema": "AB – AC / C–B · 3 giorni + 4 riposi",
       "consigliata": [
         {
           "giorno": "Lunedì",
-          "sessione": "A1",
-          "tipo": "Upper",
-          "focus": "Petto · Schiena · Spalle · Polpacci in piedi"
+          "sessione": "AB",
+          "tipo": "A+B",
+          "focus": "Spinta parte alta + gambe brevi"
         },
         {
           "giorno": "Martedì",
-          "sessione": "B1",
-          "tipo": "Lower",
-          "focus": "Gambe accosciata · Polpacci drop · Braccia"
-        },
-        {
-          "giorno": "Mercoledì",
-          "sessione": "Riposo",
-          "tipo": "—",
-          "focus": "Recupero completo o camminata leggera"
-        },
-        {
-          "giorno": "Giovedì",
-          "sessione": "A2",
-          "tipo": "Upper",
-          "focus": "Schiena · Spalle · Polpacci seduto · Halo"
-        },
-        {
-          "giorno": "Venerdì",
           "sessione": "Riposo",
           "tipo": "—",
           "focus": "Recupero"
         },
         {
+          "giorno": "Mercoledì",
+          "sessione": "AC",
+          "tipo": "A+C",
+          "focus": "Parte alta: spinta e tirata · Halo ultimo"
+        },
+        {
+          "giorno": "Giovedì",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        },
+        {
+          "giorno": "Venerdì",
+          "sessione": "CB",
+          "tipo": "C+B",
+          "focus": "Gambe principali + chiusura braccia"
+        },
+        {
           "giorno": "Sabato",
-          "sessione": "B2",
-          "tipo": "Lower",
-          "focus": "Gambe dominante anca · Bicipiti"
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
         },
         {
           "giorno": "Domenica",
@@ -166,28 +156,29 @@
         }
       ],
       "alternative": [
-        "Lun A1 · Mer B1 · Ven A2 · Dom B2 (se non puoi allenarti il martedì)",
-        "Mar A1 · Gio B1 · Sab A2 · Lun B2 (sposta tutto di un giorno)"
+        "Mar AB · Gio AC · Sab CB",
+        "Lun AB · Gio AC · Sab CB (se il mercoledì non è libero)"
       ],
       "regoleRecupero": [
-        "Non fare B1 e B2 in due giorni consecutivi se puoi evitarlo",
-        "Tra due sedute lower: almeno 48 ore",
-        "Se salti una seduta: riprendi dalla sessione saltata, non comprimere due lower nello stesso giorno",
-        "Ordine fisso delle sedute nella settimana: A1 → B1 → A2 → B2"
+        "Non fare AB e CB in due giorni consecutivi: entrambi toccano B (gambe)",
+        "AC sta in mezzo: condivide A con AB e C con CB, e dà 48 ore alle gambe",
+        "Se salti una seduta: riprendi da quella saltata, non comprimere AB e CB nello stesso giorno",
+        "Ordine fisso: AB → AC → CB",
+        "Obiettivo 60 min, tetto 75: accoppia isolamento durante il recupero dei *"
       ]
     },
     "regoleRirECedimento": {
-      "principio": "Il RIR stampato sulla scheda è il target nelle settimane 6–8. NON significa cedimento su tutte le serie: nella maggior parte del blocco lavori con 1–3 rep di riserva. Il cedimento tecnico è eccezione, non regola.",
+      "principio": "Il RIR stampato è il target nelle settimane 6–8. Non significa cedimento su tutte le serie.",
       "fondamentali": [
-        "Esercizi con * : Panca inclinata A1, Pressa B1, Lento avanti A2, Trap Bar B2",
+        "Esercizi con *: Panca inclinata AB, Pressa AB, Lento AC, Trap bar CB",
         "Settimane 1–8: nessuna serie a cedimento sui fondamentali",
-        "Settimane 10–12: solo l’ultima serie di ogni fondamentale può andare a RIR 0–1",
+        "Settimane 10–12: solo l’ultima serie di ogni * può andare a RIR 0–1",
         "Settimana 13: RIR 4–5, mai cedimento"
       ],
       "isolamento": [
         "Alzate, croci, leg extension, leg curl, curl: ultime serie più vicine al cedimento tecnico",
-        "Leg Extension B1: RIR 0–1 solo ultimo set (anche in sett. 6–8)",
-        "Polpacci e Halo: RIR 1, stop prima del cedimento tranne drop set polpacci B1"
+        "Leg Extension CB: RIR 0–1 solo ultimo set (anche in sett. 6–8)",
+        "Polpacci e Halo: RIR 1, stop prima del cedimento tranne isolamento polpacci"
       ],
       "tabellaCedimento": [
         {
@@ -254,92 +245,83 @@
       {
         "gruppo": "Petto",
         "serie": 7,
-        "note": "Tutto in A1 (panca inclinata + croci)"
+        "note": "AB: panca inclinata 4 + croci 3"
       },
       {
         "gruppo": "Schiena",
-        "serie": 14,
-        "note": "A1 lat+rematore · A2 lat+rematore/trazioni"
+        "serie": 7,
+        "note": "AC: lat 4 + rematore 3"
       },
       {
         "gruppo": "Spalle anteriori",
-        "serie": 12,
-        "note": "6 lento diretto (A1+A2) + 6 volume efficace da pressing petto"
+        "serie": 3,
+        "note": "AC: lento 3 (+ overlap panca)"
       },
       {
         "gruppo": "Spalle laterali",
-        "serie": 6,
-        "note": "A1 alzate 3 · A2 alzate 3"
+        "serie": 3,
+        "note": "AB: alzate 3"
       },
       {
         "gruppo": "Deltoide posteriore",
         "serie": 3,
-        "note": "A2 reverse pec deck"
+        "note": "AC: reverse pec (fase 1)"
       },
       {
         "gruppo": "Quadricipiti",
-        "serie": 12,
-        "note": "B1 pressa+extension 8 · B2 squat 4"
+        "serie": 7,
+        "note": "AB pressa 4 · CB extension 3"
       },
       {
-        "gruppo": "Adduttori",
-        "serie": 4,
-        "note": "B1 adduttori · macchina Doktor PRIMO"
-      },
-      {
-        "gruppo": "Femorali",
-        "serie": 16,
-        "note": "B1 rumeno+leg curl · B2 leg curl+trap bar"
+        "gruppo": "Femorali / catena",
+        "serie": 7,
+        "note": "AB leg curl 3 · CB trap 4"
       },
       {
         "gruppo": "Glutei",
-        "serie": 11,
-        "note": "B2 squat 4 + hip thrust 3 (+ overlap adduttori B1)"
+        "serie": 3,
+        "note": "CB hip thrust 3"
       },
       {
         "gruppo": "Polpacci",
-        "serie": 16,
-        "note": "4 serie per sessione (standing, drop, seduto, multipower)"
+        "serie": 6,
+        "note": "AB in piedi 3 · CB seduto 3"
       },
       {
-        "gruppo": "Bicipiti diretti",
-        "serie": 7,
-        "note": "B1 curl Scott 4 · B2 curl martello 3"
+        "gruppo": "Bicipiti",
+        "serie": 6,
+        "note": "AC Scott 3 · CB martello 3"
+      },
+      {
+        "gruppo": "Finisher",
+        "serie": 2,
+        "note": "AC Halo ultimo"
       }
     ],
     "volumePerSeduta": [
       {
-        "sessione": "A1",
+        "sessione": "AB",
         "petto": 7,
-        "schiena": 7,
-        "spalleAnt": 6,
         "spalleLat": 3,
-        "polpacci": 4
-      },
-      {
-        "sessione": "A2",
-        "petto": 0,
-        "schiena": 7,
-        "spalleAnt": 6,
-        "spalleLat": 3,
-        "deltoPost": 3,
-        "polpacci": 4
-      },
-      {
-        "sessione": "B1",
-        "quad": 12,
-        "femorali": 6,
-        "polpacci": 4,
-        "bicipiti": 4,
-        "glutei": 4
-      },
-      {
-        "sessione": "B2",
         "quad": 4,
-        "femorali": 7,
-        "glutei": 7,
-        "polpacci": 4,
-        "bicipiti": 3
+        "femorali": 3,
+        "polpacci": 3
+      },
+      {
+        "sessione": "AC",
+        "schiena": 7,
+        "spalleAnt": 3,
+        "deltoPost": 3,
+        "bicipiti": 3,
+        "halo": 2
+      },
+      {
+        "sessione": "CB",
+        "trap": 4,
+        "glutei": 3,
+        "quad": 3,
+        "bicipiti": 3,
+        "polpacci": 3
       }
     ],
     "progressioneCarico": [
@@ -350,39 +332,23 @@
       "Settimana 13: stessi esercizi, −40% serie, kg all'80–85%"
     ],
     "checklistSeduta": [
-      "1. Riscaldamento 8–10 min (bike + mobilità articolare)",
-      "2. Esercizi nell’ordine della scheda (polpacci spesso in apertura su B1/B2)",
-      "3. Annota kg, rep e RIR reale nel diario in fondo alla pagina sessione",
-      "4. Recuperi: fondamentali 120–150 s · isolamento 60–90 s",
-      "5. Finisher Halo A2 sempre ultimo esercizio"
+      "1. Riscaldamento 8–10 min",
+      "2. Esercizi nell’ordine della scheda; accoppia isolamento nel recupero dei *",
+      "3. Chiudi in 60 min se puoi, mai oltre 75",
+      "4. Annota kg, rep e RIR reale (PDF: campo Atleta vuoto)",
+      "5. Finisher Halo in AC sempre ultimo"
     ]
   },
   "sessioni": {
-    "a1": {
-      "codice": "A1",
-      "nome": "Petto · Schiena · Spalle · Polpacci",
-      "priorita": [
-        {
-          "stelle": 5,
-          "muscolo": "Dorsali"
-        },
-        {
-          "stelle": 5,
-          "muscolo": "Deltoide laterale"
-        },
-        {
-          "stelle": 5,
-          "muscolo": "Polpacci"
-        },
-        {
-          "stelle": 4,
-          "muscolo": "Petto alto"
-        },
-        {
-          "stelle": 3,
-          "muscolo": "Deltoide anteriore"
-        }
-      ],
+    "ab": {
+      "codice": "AB",
+      "nome": "Spinta A + gambe B brevi",
+      "accoppiamento": "A + B",
+      "notaSeduta": "Spinta parte alta (petto, laterali) + gambe brevi (pressa, curl, polpacci). Non accostare a CB: entrambi toccano B.",
+      "durataMinuti": {
+        "obiettivo": 60,
+        "tetto": 75
+      },
       "esercizi": [
         {
           "nome": "Panca inclinata manubri",
@@ -391,11 +357,12 @@
           "ripetizioni": "6-8",
           "tempo": "3-1-X-1",
           "recupero": "150 sec",
-          "progressione": "4×8 poi +",
+          "progressione": true,
           "rir": "2→1",
           "figura": "fig-press-incl",
           "progressionePrincipale": true,
-          "note": "Progressione principale · panca 30°, scapole addotte, gomiti ~45°."
+          "note": "Progressione principale · panca 30°, scapole addotte, gomiti ~45°. · AB: spinta A. Accoppia croci o laterali nel recupero.",
+          "peso": "—"
         },
         {
           "nome": "Croci ai cavi",
@@ -403,25 +370,13 @@
           "serie": 3,
           "ripetizioni": "10-12",
           "tempo": "2-1-2-1",
-          "recupero": "75 sec",
+          "recupero": "60 sec",
           "progressione": "+5% quando completi 3×12 con RIR 1",
           "rir": "1",
           "figura": "fig-croci",
           "progressionePrincipale": false,
-          "note": "Gomiti leggermente flessi, squeeze 1 sec in chiusura."
-        },
-        {
-          "nome": "Lento avanti bilanciere",
-          "gruppo": "Deltoide anteriore",
-          "serie": 2,
-          "ripetizioni": "6-8",
-          "tempo": "3-1-X-1",
-          "recupero": "90 sec",
-          "progressione": "+ quando completi 2×8 con RIR 1",
-          "rir": "1-2",
-          "figura": "fig-lento",
-          "progressionePrincipale": false,
-          "note": "Volume moderato deltoide anteriore — evita sovraccarico rispetto al petto."
+          "note": "Gomiti leggermente flessi, squeeze 1 sec in chiusura. · Isolamento petto — recuperi corti.",
+          "peso": "—"
         },
         {
           "nome": "Alzate laterali",
@@ -434,8 +389,63 @@
           "rir": "1",
           "figura": "fig-alzate",
           "progressionePrincipale": false,
-          "note": "Priorità deltoide laterale. Discesa lenta, niente slancio col busto."
+          "note": "Priorità deltoide laterale. Discesa lenta, niente slancio col busto. · Deltoide laterale: priorità parte alta.",
+          "peso": "—"
         },
+        {
+          "nome": "Pressa",
+          "gruppo": "Quadricipiti",
+          "serie": 4,
+          "ripetizioni": "8-10",
+          "tempo": "3-1-2-1",
+          "recupero": "120 sec",
+          "progressione": true,
+          "rir": "1",
+          "figura": "fig-pressa",
+          "progressionePrincipale": true,
+          "note": "Pressa 45° · ROM completo, bacino appoggiato, eccentrica lenta. · AB: gambe B brevi. Accoppia leg curl nel recupero.",
+          "peso": "—"
+        },
+        {
+          "nome": "Leg Curl",
+          "gruppo": "Femorali",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "2-1-2-1",
+          "recupero": "75 sec",
+          "progressione": "+5% quando completi 3×12 con RIR 1",
+          "rir": "1",
+          "figura": "fig-legcurl",
+          "progressionePrincipale": false,
+          "note": "Sdraiato o seduto · volume femorali ridotto Femorali in AB, volume contenuto.",
+          "peso": "—"
+        },
+        {
+          "nome": "Polpacci in piedi",
+          "gruppo": "Polpacci",
+          "serie": 3,
+          "ripetizioni": "8-10",
+          "tempo": "3-2-X-2",
+          "recupero": "60 sec",
+          "progressione": "+5% quando completi 4×10 con RIR 1",
+          "rir": "1",
+          "figura": "fig-polpacci",
+          "progressionePrincipale": false,
+          "note": "Standing calf raise · ROM completo, pausa 2 sec in stretch. · Polpacci in piedi — ROM completo.",
+          "peso": "—"
+        }
+      ]
+    },
+    "ac": {
+      "codice": "AC",
+      "nome": "Spinta A + tirata C",
+      "accoppiamento": "A + C",
+      "notaSeduta": "Giorno parte alta: spalle/lento (A) + schiena (C). Halo ultimo. Separa AB e CB.",
+      "durataMinuti": {
+        "obiettivo": 60,
+        "tetto": 75
+      },
+      "esercizi": [
         {
           "nome": "Lat machine",
           "gruppo": "Dorsali",
@@ -447,7 +457,8 @@
           "rir": "1",
           "figura": "fig-lat",
           "progressionePrincipale": false,
-          "note": "Presa larga. Deprime le scapole prima di tirare, sbarra al petto alto."
+          "note": "Presa larga. Deprime le scapole prima di tirare, sbarra al petto alto. · AC: tirata C. Accoppia curl nel recupero.",
+          "peso": "—"
         },
         {
           "nome": "Rematore bilanciere",
@@ -460,304 +471,22 @@
           "rir": "1",
           "figura": "fig-rematore",
           "progressionePrincipale": false,
-          "note": "Busto ~45°, squeeze scapole 1 sec in chiusura."
+          "note": "Busto ~45°, squeeze scapole 1 sec in chiusura. · Trazione orizzontale.",
+          "peso": "—"
         },
-        {
-          "nome": "Polpacci in piedi",
-          "gruppo": "Polpacci",
-          "serie": 4,
-          "ripetizioni": "8-10",
-          "tempo": "3-2-X-2",
-          "recupero": "60 sec",
-          "progressione": "+5% quando completi 4×10 con RIR 1",
-          "rir": "1",
-          "figura": "fig-polpacci",
-          "progressionePrincipale": false,
-          "note": "Standing calf raise · ROM completo, pausa 2 sec in stretch."
-        }
-      ],
-      "focusTecnico": {
-        "Panca inclinata manubri": [
-          "✓ Panca 30°, piedi a terra, scapole addotte e depresse",
-          "✓ Discesa ai manubri al livello clavicole, gomiti ~45°",
-          "✓ Spinta in alto senza far toccare i pesi in cima"
-        ],
-        "Lat machine": [
-          "✓ Cosce bloccate, petto alto, presa larga",
-          "✓ Deprime le scapole prima di iniziare la trazione",
-          "✓ Tira la sbarra al petto alto, gomiti verso il basso"
-        ],
-        "Rematore bilanciere": [
-          "✓ Busto inclinato ~45°, schiena neutra, core contratto",
-          "✓ Tira il bilanciere all'ombelico, squeeze scapole 1 sec",
-          "✓ Evita cat back e slancio con il busto"
-        ]
-      },
-      "volumeSeduta": [
-        {
-          "muscolo": "Dorsali",
-          "serie": 7
-        },
-        {
-          "muscolo": "Petto alto",
-          "serie": 4
-        },
-        {
-          "muscolo": "Petto",
-          "serie": 3
-        },
-        {
-          "muscolo": "Deltoide laterale",
-          "serie": 3
-        },
-        {
-          "muscolo": "Deltoide anteriore",
-          "serie": 2
-        },
-        {
-          "muscolo": "Polpacci",
-          "serie": 4
-        }
-      ],
-      "notaComplementare": "A1 enfatizza petto alto e dorsali con angoli classici. Si complementa con A2 che sposta il focus su lento avanti in progressione, deltoide posteriore e polpacci seduto — stessa base dorsale, angoli spalle diversi."
-    },
-    "b1": {
-      "codice": "B1",
-      "nome": "Gambe accosciata · Polpacci · Braccia",
-      "priorita": [
-        {
-          "stelle": 5,
-          "muscolo": "Quadricipiti"
-        },
-        {
-          "stelle": 5,
-          "muscolo": "Polpacci"
-        },
-        {
-          "stelle": 4,
-          "muscolo": "Femorali"
-        },
-        {
-          "stelle": 3,
-          "muscolo": "Bicipiti"
-        }
-      ],
-      "esercizi": [
-        {
-          "nome": "Polpacci drop set",
-          "gruppo": "Polpacci",
-          "serie": 4,
-          "ripetizioni": "Drop",
-          "tempo": "2-1-X-1",
-          "recupero": "60 sec",
-          "progressione": "Stessa sequenza drop finché completi tutte le serie pulite",
-          "rir": "1",
-          "figura": "fig-polpacci",
-          "progressionePrincipale": false,
-          "note": "Multipower: es. carichi da definire senza pausa tra i cali · 4×25 totali."
-        },
-        {
-          "nome": "Pressa",
-          "gruppo": "Quadricipiti",
-          "serie": 4,
-          "ripetizioni": "8-10",
-          "tempo": "3-1-2-1",
-          "recupero": "120 sec",
-          "progressione": "+5% quando completi 4×10 con RIR 1",
-          "rir": "1",
-          "figura": "fig-pressa",
-          "progressionePrincipale": true,
-          "note": "Pressa 45° · ROM completo, bacino appoggiato, eccentrica lenta."
-        },
-        {
-          "nome": "Leg Extension",
-          "gruppo": "Quadricipiti",
-          "serie": 4,
-          "ripetizioni": "10-12",
-          "tempo": "2-1-2-1",
-          "recupero": "90 sec",
-          "progressione": "+5% quando completi 4×12",
-          "rir": "0-1 ultimo set",
-          "figura": "fig-legext",
-          "progressionePrincipale": false,
-          "note": "Ultime serie vicino al cedimento tecnico · wafer se serve."
-        },
-        {
-          "nome": "Adduttori · macchina Doktor PRIMO",
-          "gruppo": "Adduttori",
-          "serie": 4,
-          "ripetizioni": "8",
-          "tempo": "2-1-2-1",
-          "recupero": "120 sec",
-          "progressione": "Carico fisso progressivo quando completi 4×8 con RIR 1",
-          "rir": "1",
-          "figura": "fig-doktor",
-          "progressionePrincipale": false,
-          "note": "Adduttori e abduttori · macchina Doktor PRIMO (palestra) · squeeze 3s, no cedimento."
-        },
-        {
-          "nome": "Rumeno manubri",
-          "gruppo": "Femorali",
-          "serie": 3,
-          "ripetizioni": "8-10",
-          "tempo": "3-1-2-1",
-          "recupero": "120 sec",
-          "progressione": "+ quando completi 3×10 con RIR 1",
-          "rir": "1",
-          "figura": "fig-rdl",
-          "progressionePrincipale": false,
-          "note": "Stacco rumeno con manubri · schiena neutra, stretch femorali."
-        },
-        {
-          "nome": "Curl Scott",
-          "gruppo": "Bicipiti",
-          "serie": 4,
-          "ripetizioni": "8-10",
-          "tempo": "2-1-2-1",
-          "recupero": "60 sec",
-          "progressione": "+ quando completi 4×10 con RIR 1",
-          "rir": "1",
-          "figura": "fig-curl-scott",
-          "progressionePrincipale": false,
-          "note": "Panca Scott curva · gomiti fermi sul supporto."
-        },
-        {
-          "nome": "Leg Curl",
-          "gruppo": "Femorali",
-          "serie": 3,
-          "ripetizioni": "10-12",
-          "tempo": "2-1-2-1",
-          "recupero": "90 sec",
-          "progressione": "+5% quando completi 3×12 con RIR 1",
-          "rir": "1",
-          "figura": "fig-legcurl",
-          "progressionePrincipale": false,
-          "note": "Sdraiato o seduto · volume femorali ridotto perché B2 lavora catena posteriore."
-        }
-      ],
-      "focusTecnico": {
-        "Pressa": [
-          "✓ ROM completo, bacino sempre appoggiato",
-          "✓ Nessun rimbalzo in basso",
-          "✓ Ginocchia in linea con i piedi"
-        ],
-        "Leg Extension": [
-          "✓ Ultima serie RIR 0-1 se la tecnica regge",
-          "✓ Pausa 1 sec in contrazione",
-          "✓ Discesa controllata"
-        ],
-        "Adduttori · macchina Doktor PRIMO": [
-          "✓ Contrazione forte, squeeze 3 sec al picco",
-          "✓ Stop prima del cedimento (RIR 1)",
-          "✓ Due macchine adduttori/abduttori se disponibili"
-        ],
-        "Polpacci drop set": [
-          "✓ Drop senza pausa tra i cali",
-          "✓ ROM completo",
-          "✓ Nessun rimbalzo"
-        ]
-      },
-      "volumeSeduta": [
-        {
-          "muscolo": "Quadricipiti",
-          "serie": 8
-        },
-        {
-          "muscolo": "Adduttori",
-          "serie": 4
-        },
-        {
-          "muscolo": "Polpacci",
-          "serie": 4
-        },
-        {
-          "muscolo": "Femorali",
-          "serie": 6
-        },
-        {
-          "muscolo": "Bicipiti",
-          "serie": 4
-        }
-      ],
-      "notaComplementare": "B1 concentra il lavoro su pattern accosciato (pressa, extension, adduttori) e polpacci in apertura. Femorali ridotti (rumeno + leg curl) perché B2 dà enfasi a catena posteriore e glutei — le due sessioni gambe si completano senza sovraccaricare i femorali."
-    },
-    "a2": {
-      "codice": "A2",
-      "nome": "Schiena · Spalle · Polpacci",
-      "priorita": [
-        {
-          "stelle": 5,
-          "muscolo": "Dorsali"
-        },
-        {
-          "stelle": 5,
-          "muscolo": "Deltoide laterale"
-        },
-        {
-          "stelle": 4,
-          "muscolo": "Deltoide anteriore"
-        },
-        {
-          "stelle": 4,
-          "muscolo": "Deltoide posteriore"
-        },
-        {
-          "stelle": 3,
-          "muscolo": "Polpacci"
-        }
-      ],
-      "esercizi": [
         {
           "nome": "Lento avanti bilanciere",
           "gruppo": "Deltoide anteriore",
-          "serie": 4,
+          "serie": 3,
           "ripetizioni": "6-8",
           "tempo": "3-1-X-1",
-          "recupero": "120 sec",
-          "progressione": "+ quando completi 4×8 con RIR 1",
-          "rir": "2→1",
+          "recupero": "150 sec",
+          "progressione": true,
+          "rir": "1-2",
           "figura": "fig-lento",
-          "progressionePrincipale": true,
-          "note": "Progressione principale A2 · gomiti leggermente flessi, barra davanti al viso, no slancio col busto."
-        },
-        {
-          "nome": "Alzate laterali",
-          "gruppo": "Deltoide laterale",
-          "serie": 3,
-          "ripetizioni": "12-15",
-          "tempo": "2-1-3-1",
-          "recupero": "60 sec",
-          "progressione": "+ quando completi 3×15 con RIR 1",
-          "rir": "1",
-          "figura": "fig-alzate",
           "progressionePrincipale": false,
-          "note": "Priorità deltoide laterale. Discesa lenta, niente slancio col busto."
-        },
-        {
-          "nome": "Lat machine",
-          "gruppo": "Dorsali",
-          "serie": 4,
-          "ripetizioni": "8-10",
-          "tempo": "3-1-2-1",
-          "recupero": "120 sec",
-          "progressione": "+5% quando completi 4×10 con RIR 1",
-          "rir": "1",
-          "figura": "fig-lat",
-          "progressionePrincipale": false,
-          "note": "Presa larga. Deprime le scapole prima di tirare, sbarra al petto alto."
-        },
-        {
-          "nome": "Rematore/Trazioni",
-          "gruppo": "Dorsali",
-          "serie": 3,
-          "ripetizioni": "8-10",
-          "tempo": "3-1-2-1",
-          "recupero": "120 sec",
-          "progressione": "+2,5-5% quando completi 3×10 con RIR 1",
-          "rir": "1",
-          "figura": "fig-rematore",
-          "progressionePrincipale": false,
-          "note": "Alterna rematore bilanciere e trazioni a presa larga tra le sedute."
+          "note": "Volume moderato deltoide anteriore — evita sovraccarico rispetto al petto. · AC: spinta A (spalle). Recupero pieno sui *.",
+          "peso": "—"
         },
         {
           "nome": "Reverse Pec Deck",
@@ -770,20 +499,22 @@
           "rir": "1",
           "figura": "fig-reverse-pec",
           "progressionePrincipale": false,
-          "note": "Deltoide posteriore e romboidi — equilibra il volume spalle anteriori/laterali."
+          "note": "Deltoide posteriore e romboidi — equilibra il volume spalle anteriori/laterali. · Equilibrio deltoide posteriore.",
+          "peso": "—"
         },
         {
-          "nome": "Polpacci seduto",
-          "gruppo": "Polpacci",
-          "serie": 4,
-          "ripetizioni": "15-20",
-          "tempo": "2-1-3-1",
+          "nome": "Curl Scott",
+          "gruppo": "Bicipiti",
+          "serie": 3,
+          "ripetizioni": "8-10",
+          "tempo": "2-1-2-1",
           "recupero": "60 sec",
-          "progressione": "+5% quando completi 4×20 con RIR 1",
+          "progressione": "+ quando completi 4×10 con RIR 1",
           "rir": "1",
-          "figura": "fig-calf-seated",
+          "figura": "fig-curl-scott",
           "progressionePrincipale": false,
-          "note": "Soleo — complementare ai polpacci in piedi di A1. ROM completo, pausa in stretch."
+          "note": "Panca Scott curva · gomiti fermi sul supporto. · Bicipiti in AC (parte alta).",
+          "peso": "—"
         },
         {
           "nome": "Halo",
@@ -792,146 +523,25 @@
           "ripetizioni": "12",
           "tempo": "2-1-2-1",
           "recupero": "60 sec",
-          "progressione": "Carico fisso — finisher tecnico",
+          "progressione": false,
           "rir": "1",
           "figura": "fig-halo",
           "progressionePrincipale": false,
-          "note": "Kettlebell · finisher, sempre ultimo esercizio. Halo lento intorno alla testa, core attivo."
+          "note": "Finisher kettlebell — sempre ultimo esercizio della seduta. Halo lento, core attivo.",
+          "peso": "—"
         }
-      ],
-      "focusTecnico": {
-        "Lento avanti bilanciere": [
-          "✓ Progressione principale — RIR 2 nelle prime settimane, poi 1",
-          "✓ Gomiti leggermente flessi, barra davanti al viso",
-          "✓ Spinta verticale senza slancio col busto",
-          "✓ Discesa controllata fino all'altezza clavicole"
-        ],
-        "Alzate laterali": [
-          "✓ Gomiti leggermente flessi, alza fino all'altezza spalle",
-          "✓ Discesa lenta 3 sec — niente slancio",
-          "✓ Polsi neutri, spalle basse",
-          "✓ Stesso schema di A1 per coerenza del deltoide laterale"
-        ],
-        "Lat machine": [
-          "✓ Presa larga, cosce bloccate sotto i cuscinetti",
-          "✓ Deprime le scapole prima di tirare",
-          "✓ Sbarra al petto alto, squeeze 1 sec",
-          "✓ Risalita lenta senza slancio"
-        ],
-        "Rematore/Trazioni": [
-          "✓ Rematore: busto ~45°, squeeze scapole in chiusura",
-          "✓ Trazioni: presa larga, petto verso la sbarra",
-          "✓ Alterna tra le sedute — stesso volume, angolo diverso",
-          "✓ RIR 1 su entrambe le varianti"
-        ],
-        "Reverse Pec Deck": [
-          "✓ Petto appoggiato al supporto, braccia parallele al pavimento",
-          "✓ Apertura controllata fino all'allineamento spalle",
-          "✓ Squeeze deltoide posteriore 1 sec",
-          "✓ 15 rep pulite — carico moderato"
-        ],
-        "Polpacci seduto": [
-          "✓ Ginocchia a 90°, carico sui polpacci (soleo)",
-          "✓ ROM completo, pausa 3 sec in stretch",
-          "✓ Range 15-20 rep per densità metabolica",
-          "✓ Complementare ai polpacci in piedi di A1"
-        ],
-        "Halo": [
-          "✓ Sempre ultimo esercizio della seduta",
-          "✓ Kettlebell leggera, movimento lento intorno alla testa",
-          "✓ Core attivo, respirazione controllata",
-          "✓ 12 rep totali — qualità gestuale, non carico"
-        ]
-      },
-      "volumeSeduta": [
-        {
-          "muscolo": "Dorsali",
-          "serie": 7
-        },
-        {
-          "muscolo": "Deltoide anteriore",
-          "serie": 4
-        },
-        {
-          "muscolo": "Deltoide laterale",
-          "serie": 3
-        },
-        {
-          "muscolo": "Deltoide posteriore",
-          "serie": 3
-        },
-        {
-          "muscolo": "Polpacci",
-          "serie": 4
-        }
-      ],
-      "notaComplementare": "A2 è la scheda che cambierei meno: lento avanti in progressione, dorsali con lat e rematore/trazioni, equilibrio spalle e polpacci seduto. Il petto resta concentrato in A1; insieme le due sessioni upper coprono 14 serie dorsali e 7 serie petto."
+      ]
     },
-    "b2": {
-      "codice": "B2",
-      "nome": "Gambe dominante anca · Bicipiti",
-      "priorita": [
-        {
-          "stelle": 5,
-          "muscolo": "Glutei"
-        },
-        {
-          "stelle": 5,
-          "muscolo": "Femorali"
-        },
-        {
-          "stelle": 4,
-          "muscolo": "Quadricipiti"
-        },
-        {
-          "stelle": 4,
-          "muscolo": "Polpacci"
-        },
-        {
-          "stelle": 3,
-          "muscolo": "Bicipiti"
-        }
-      ],
+    "cb": {
+      "codice": "CB",
+      "nome": "Tirata C + gambe B",
+      "accoppiamento": "C + B",
+      "notaSeduta": "Gambe principali (trap, hip, extension) + chiusura braccia. Lontano da AB per recuperare B.",
+      "durataMinuti": {
+        "obiettivo": 60,
+        "tetto": 75
+      },
       "esercizi": [
-        {
-          "nome": "Polpacci multipower",
-          "gruppo": "Polpacci",
-          "serie": 4,
-          "ripetizioni": "12-15",
-          "tempo": "3-2-X-2",
-          "recupero": "60 sec",
-          "progressione": "+5% quando completi 4×15 con RIR 1",
-          "rir": "1",
-          "figura": "fig-polpacci",
-          "progressionePrincipale": false,
-          "note": "Multipower · ROM completo, pausa in stretch e squeeze in punta."
-        },
-        {
-          "nome": "Squat multipower",
-          "gruppo": "Quadricipiti",
-          "serie": 4,
-          "ripetizioni": "8",
-          "tempo": "3-1-X-1",
-          "recupero": "120 sec",
-          "progressione": "+5% quando completi 4×8 con RIR 1",
-          "rir": "1",
-          "figura": "fig-squat",
-          "progressionePrincipale": false,
-          "note": "Barra sui trapezi, piedi leggermente avanti · profondità costante, ginocchia in linea con i piedi."
-        },
-        {
-          "nome": "Leg Curl",
-          "gruppo": "Femorali",
-          "serie": 3,
-          "ripetizioni": "10",
-          "tempo": "2-1-2-1",
-          "recupero": "90 sec",
-          "progressione": "+5% quando completi 3×10 con RIR 1",
-          "rir": "1",
-          "figura": "fig-legcurl",
-          "progressionePrincipale": false,
-          "note": "Sdraiato o seduto · isolamento femorali, pausa 1 sec in contrazione."
-        },
         {
           "nome": "Trap Bar",
           "gruppo": "Femorali",
@@ -939,11 +549,12 @@
           "ripetizioni": "6-8",
           "tempo": "3-1-X-1",
           "recupero": "150 sec",
-          "progressione": "+2,5- quando completi 4×8 con RIR 1",
+          "progressione": true,
           "rir": "1",
           "figura": "fig-trapbar",
           "progressionePrincipale": true,
-          "note": "Progressione principale B2 · stacco omega, schiena neutra, spinta col bacino."
+          "note": "Progressione principale CB · stacco omega, schiena neutra, spinta col bacino. · CB: gambe B principali. Recupero pieno.",
+          "peso": "—"
         },
         {
           "nome": "Hip Thrust",
@@ -956,7 +567,22 @@
           "rir": "1",
           "figura": "fig-hip",
           "progressionePrincipale": false,
-          "note": "Dominante anca — pausa 1-2 sec in alto, mento al petto, squeeze glutei."
+          "note": "Dominante anca — pausa 1-2 sec in alto, mento al petto, squeeze glutei. · Dominante anca.",
+          "peso": "—"
+        },
+        {
+          "nome": "Leg Extension",
+          "gruppo": "Quadricipiti",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "2-1-2-1",
+          "recupero": "75 sec",
+          "progressione": "+5% quando completi 4×12",
+          "rir": "0-1 ultimo set",
+          "figura": "fig-legext",
+          "progressionePrincipale": false,
+          "note": "Ultime serie vicino al cedimento tecnico · wafer se serve. · Quadricipiti — accoppia col curl martello.",
+          "peso": "—"
         },
         {
           "nome": "Curl Martello",
@@ -969,70 +595,33 @@
           "rir": "1",
           "figura": "fig-curl-mart",
           "progressionePrincipale": false,
-          "note": "Presa neutra, gomiti fermi · brachiale e brachioradiale."
+          "note": "Presa neutra, gomiti fermi · brachiale e brachioradiale. · CB: chiusura C (braccia).",
+          "peso": "—"
+        },
+        {
+          "nome": "Polpacci seduto",
+          "gruppo": "Polpacci",
+          "serie": 3,
+          "ripetizioni": "15-20",
+          "tempo": "2-1-3-1",
+          "recupero": "60 sec",
+          "progressione": "+5% quando completi 4×20 con RIR 1",
+          "rir": "1",
+          "figura": "fig-calf-seated",
+          "progressionePrincipale": false,
+          "note": "Soleo — complementare ai polpacci in piedi di AB. ROM completo, pausa in stretch.",
+          "peso": "—"
         }
-      ],
-      "focusTecnico": {
-        "Polpacci multipower": [
-          "✓ Multipower, piedi su rialzo se disponibile",
-          "✓ ROM completo con pausa 2 sec in stretch",
-          "✓ Contrazione massima in punta",
-          "✓ Nessun rimbalzo in basso"
-        ],
-        "Squat multipower": [
-          "✓ Barra sui trapezi, addome contratto",
-          "✓ Profondità costante, bacino sotto il ginocchio",
-          "✓ Ginocchia in linea con i piedi, no valgo",
-          "✓ Risalita spingendo col tallone"
-        ],
-        "Leg Curl": [
-          "✓ Perno allineato al ginocchio",
-          "✓ Flessione completa, pausa 1 sec in contrazione",
-          "✓ Discesa lenta, niente slancio",
-          "✓ 10 rep pulite — carico moderato"
-        ],
-        "Trap Bar": [
-          "✓ Progressione principale — schiena neutra, petto alto",
-          "✓ Spingi i fianchi indietro, barra vicino alle gambe",
-          "✓ Risalita estendendo le anche, squeeze glutei",
-          "✓ RIR 1 — stop prima del cedimento tecnico"
-        ],
-        "Hip Thrust": [
-          "✓ Schiena alta su panca, bilanciere sui fianchi",
-          "✓ Piedi larghezza spalle, mento al petto",
-          "✓ Spinta fino all'allineamento spalle-anche-ginocchia",
-          "✓ Pausa 1-2 sec in alto con contrazione glutei massima"
-        ],
-        "Curl Martello": [
-          "✓ Presa neutra, gomiti fermi ai fianchi",
-          "✓ Flessione completa senza movimento delle spalle",
-          "✓ Discesa controllata fino a quasi estensione",
-          "✓ Finisher braccia — no dondolio"
-        ]
-      },
-      "volumeSeduta": [
-        {
-          "muscolo": "Polpacci",
-          "serie": 4
-        },
-        {
-          "muscolo": "Quadricipiti",
-          "serie": 4
-        },
-        {
-          "muscolo": "Femorali",
-          "serie": 7
-        },
-        {
-          "muscolo": "Glutei",
-          "serie": 3
-        },
-        {
-          "muscolo": "Bicipiti",
-          "serie": 3
-        }
-      ],
-      "notaComplementare": "B2 è la sessione dominante anca: trap bar in progressione, squat multipower, hip thrust e leg curl. Complementa B1 (pattern accosciato): insieme coprono quad + femorali + glutei + polpacci ad alta frequenza. Valutazione programma completo A1-B2: 7 petto, 14 dorsali, 16 quadricipiti, 13 femorali, 16 polpacci, 7 bicipiti — ~60% volume lower."
+      ]
     }
-  }
+  },
+  "perche": "Costruire tessuto e abituare tendini e tecnica. Non è la fase dei record: è la base da cui partono le altre tre.",
+  "intensitaRecupero": {
+    "intensita": "Sett. 1–2 RIR 3–2 · 3–5 RIR 2 · 6–8 RIR 1 · 9 scarico −25% · 10–12 picco controllato (cedimento solo sull’ultima serie dei *) · 13 deload −40%.",
+    "recupero": "Fondamentali * 2–2,5 min. Isolamento ~60 s. Accoppia l’isolamento durante il riposo dei * per chiudere in ~60 min (tetto 75).",
+    "durataSeduta": "obiettivo 60 min, tetto 75 min",
+    "deload": "settimana 13 · −40% volume",
+    "split": "AB – AC / C–B"
+  },
+  "rir": "sett. 6–8: RIR 1"
 }
