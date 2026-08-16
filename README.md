@@ -26,7 +26,19 @@ Dati anagrafici/clinici dell’amico **non inventati** (campi vuoti). Il PDF res
 - PDF A2: http://127.0.0.1:8080/admin/sessione/pdf/?ciclo=ipertrofia-accumulo&sessione=a2
 - PDF B2: http://127.0.0.1:8080/admin/sessione/pdf/?ciclo=ipertrofia-accumulo&sessione=b2
 - Mappa esercizi: http://127.0.0.1:8080/admin/mappa-esercizi/
-- GitHub Pages (dopo deploy): `https://ginocapon.github.io/Michele-allenamenti/admin/`
+- GitHub Pages: **https://ginocapon.github.io/Michele-allenamenti/admin/**
+
+## GitHub Pages (togliere RAAS)
+
+Questo repo **non** è più raasautomazioni. Il custom domain va rimosso a mano (Settings del repo; l’API da agente dà 403):
+
+1. Apri **https://github.com/ginocapon/Michele-allenamenti/settings/pages**
+2. In **Custom domain** cancella `www.raasautomazioni.it` → **Save** → **Remove**
+3. **Build and deployment** → Source: **GitHub Actions**
+4. Attendi il workflow **Deploy GitHub Pages** sulla branch `main`
+
+Sito Michele: `https://ginocapon.github.io/Michele-allenamenti/admin/`  
+Non usare più `www.raasautomazioni.it` per questo repo.
 
 ## Stampa per l’amico
 
