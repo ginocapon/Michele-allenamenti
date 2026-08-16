@@ -1,0 +1,33 @@
+{
+  "anni": [
+    {
+      "id": "2026-2027",
+      "label": "2026 – 2027 · base amico",
+      "macrocicloUrl": "/admin/data/macrociclo-2026-2027.json",
+      "periodi": [
+        {
+          "id": "set26-ago27",
+          "label": "Settembre 2026 → Agosto 2027",
+          "descrizione": "STEP A: clone del macrociclo Gino (4×13 sett., A1–B2, deload sett. 13, ~55% lower). Pesi vuoti. Personalizzazione esercizi/date = STEP B."
+        }
+      ]
+    }
+  ],
+  "_nota": "Repo amico: un solo anno in hub. Non inventare dati clinici. STEP B aggiorna solo JSON + catalogo/figure.",
+  "profilo": {
+    "nomeStampa": "",
+    "notaNome": "Il nome atleta va SOLO nel campo compilabile del PDF (Atleta: _______). Il PDF resta anonimo.",
+    "eta": null,
+    "anniPalestra": null,
+    "livello": null,
+    "obiettivoAnno": null,
+    "giorniSettimana": 4,
+    "attrezzaturaBase": "modello Gino: multipower, manubri, cavi, leg machines, kettlebell (finisher A2). Da confermare in STEP B.",
+    "limitiInfortuni": null,
+    "dataInizio": "2026-09-01",
+    "preferenzaMeseCambioFase": "fine novembre / fine febbraio / fine maggio / fine agosto (13 sett.)",
+    "prioritaMuscolari": null,
+    "kettlebellFinisher": "sì in A2 (Halo / Clean Halo), sempre ultimo esercizio; A1 senza Catch Ball (rebalance 55%)",
+    "toneImmagini": "SVG tecnico (admin/img/esercizi-sprite.svg) — nessuna illustrazione IA in STEP A"
+  }
+}
