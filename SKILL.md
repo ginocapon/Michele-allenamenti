@@ -32,7 +32,7 @@ Markup: `.cursor/rules/ai-trasparenza.mdc`.
 | Età | 50 |
 | Anni palestra / infortuni / livello | solo se forniti; altrimenti `null` |
 
-Il ritratto va la **foto originale**. Se in repo c’è ancora un webp IA, restano `data-ai` e «Foto AI» finché il file originale non sostituisce `admin/img/michele/michele-baldan.webp`.
+Il ritratto è la **foto originale** in `admin/img/michele/michele-baldan.webp` — niente `data-ai` né «Foto AI».
 
 ---
 

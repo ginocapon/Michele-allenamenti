@@ -7,7 +7,7 @@
     ai.className = "ai-site-notice";
     ai.setAttribute("role", "note");
     ai.innerHTML =
-      'Il ritratto in home è <strong>generato con IA</strong> (marchio «Foto AI»). Le figure degli esercizi sono SVG tecnici. ' +
+      'Il ritratto in home è una <strong>foto originale</strong>. Le figure degli esercizi sono SVG tecnici. ' +
       'Dettagli: <a href="' + (window.fqUrl ? window.fqUrl("/trasparenza-ai/") : "/trasparenza-ai/") + '">Trasparenza AI (AI Act UE)</a>.';
     footer.appendChild(ai);
   }
