@@ -43,3 +43,50 @@
   line-height: 1.25;
   color: #333;
 }
+
+.scheda-a4--admin .scheda-a4__quad table {
+  table-layout: fixed;
+}
+
+.scheda-a4--admin table th:nth-child(1),
+.scheda-a4--admin table td:nth-child(1) {
+  width: 27%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  vertical-align: top;
+}
+
+.scheda-a4--admin table th:nth-child(2),
+.scheda-a4--admin table td:nth-child(2) {
+  width: 16%;
+}
+
+.scheda-a4--admin table th:nth-child(3),
+.scheda-a4--admin table td:nth-child(3),
+.scheda-a4--admin table th:nth-child(4),
+.scheda-a4--admin table td:nth-child(4) {
+  width: 10%;
+}
+
+.scheda-a4--admin table th:nth-child(5),
+.scheda-a4--admin table td:nth-child(5),
+.scheda-a4--admin table th:nth-child(6),
+.scheda-a4--admin table td:nth-child(6),
+.scheda-a4--admin table th:nth-child(7),
+.scheda-a4--admin table td:nth-child(7) {
+  width: 6.5%;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .scheda-a4--admin table th:nth-child(1),
+  .scheda-a4--admin table td:nth-child(1) {
+    width: 24%;
+  }
+  .scheda-a4--admin table th:nth-child(2),
+  .scheda-a4--admin table td:nth-child(2) {
+    width: 18%;
+    min-width: 2.5rem;
+  }
+}
